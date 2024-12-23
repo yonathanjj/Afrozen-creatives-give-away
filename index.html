@@ -230,30 +230,28 @@
                     </a>
                 </div>
 
-                <!-- Right Side Content -->
-                <div class="column is-half" style="padding-right: 6rem;">
-                    <form>
-                        <h1 class="title" style="color: white; font-weight: 300;">Full name*</h1>
-                        <input class="input" type="text" placeholder="Full Name" style="border: none; border-bottom: 2px solid white; margin-bottom: 15px; color: white; background: transparent;">
+                <form action="https://formspree.io/f/mannybra" method="POST">
+                    <h1 class="title" style="color: white; font-weight: 300;">Full name*</h1>
+                    <input class="input" type="text" name="name" placeholder="Full Name" style="border: none; border-bottom: 2px solid white; margin-bottom: 15px; color: white; background: transparent;" required>
 
-                        <h1 class="title" style="color: white; font-weight: 300;">Email*</h1>
-                        <input class="input" type="email" placeholder="Your Email" style="border: none; border-bottom: 2px solid white; margin-bottom: 15px; color: white; background: transparent;">
+                    <h1 class="title" style="color: white; font-weight: 300;">Email*</h1>
+                    <input class="input" type="email" name="email" placeholder="Your Email" style="border: none; border-bottom: 2px solid white; margin-bottom: 15px; color: white; background: transparent;" required>
 
-                        <h1 class="title" style="color: white; font-weight: 300;">Phone number*</h1>
-                        <input class="input" type="tel" placeholder="Your Phone Number" style="border: none; border-bottom: 2px solid white; margin-bottom: 15px; color: white; background: transparent;">
+                    <h1 class="title" style="color: white; font-weight: 300;">Phone number*</h1>
+                    <input class="input" type="tel" name="phone" placeholder="Your Phone Number" style="border: none; border-bottom: 2px solid white; margin-bottom: 15px; color: white; background: transparent;" required>
 
-                        <h1 class="title" style="color: white; font-weight: 300;">Why Do You Deserve to Win?*</h1>
-                        <input class="input" type="text" placeholder="Your Answer" style="border: none; border-bottom: 2px solid white; margin-bottom: 15px; color: white; background: transparent;">
+                    <h1 class="title" style="color: white; font-weight: 300;">Why Do You Deserve to Win?*</h1>
+                    <input class="input" type="text" name="reason" placeholder="Your Answer" style="border: none; border-bottom: 2px solid white; margin-bottom: 15px; color: white; background: transparent;" required>
 
-                        <!-- Terms and Conditions -->
-                        <div class="field" style="color: white;">
-                            <input type="checkbox" id="agree" style="width: 20px; height: 20px; border-radius: 50%; margin-right: 10px;">
-                            <label for="agree" style="font-size: 16px; font-weight: 300;">I agree to the terms and conditions and allow Afrizen to contact me via email.</label>
-                        </div>
-                    </form>
-                <!-- Submit Circle Button -->
-                        <div class="field">
-                            <button type="submit" class="button is-primary" style="
+                    <!-- Terms and Conditions -->
+                    <div class="field" style="color: white;">
+                        <input type="checkbox" id="agree" name="agree" value="yes" style="width: 20px; height: 20px; border-radius: 50%; margin-right: 10px;" required>
+                        <label for="agree" style="font-size: 16px; font-weight: 300;">I agree to the terms and conditions and allow Afrizen to contact me via email.</label>
+                    </div>
+
+                    <!-- Submit Circle Button -->
+                    <div class="field">
+                        <button type="submit" class="button is-primary" style="
             border-radius: 50%;
             width: 80px;
             height: 80px;
@@ -267,11 +265,12 @@
             transition: transform 0.3s ease, background-color 0.3s ease;
               margin-top: 20px;
           ">
-                                <span>Submit</span>
-                            </button>
-                        </div>
-                    </form>
-                </div>
+                            <span>Submit</span>
+                        </button>
+                    </div>
+                </form>
+
+            </div>
             </div>
         </div>
 
